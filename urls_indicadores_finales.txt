@@ -1,0 +1,4 @@
+http://localhost:8089/tableau_indicadores/01_indicadores_docencia.html
+http://localhost:8089/tableau_indicadores/02_indicadores_investigacion.html
+http://localhost:8089/tableau_indicadores/03_indicadores_ext_accion_social.html
+http://localhost:8089/tableau_indicadores/04_indicadores_vida_estudiantil.html

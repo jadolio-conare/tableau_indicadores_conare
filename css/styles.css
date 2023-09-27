@@ -1,0 +1,55 @@
+@import url("styles_responsive.css");
+
+/* =================== */
+
+:root {
+    --width-wrapper-viz: calc(100vw - (100vw - 100%));
+}
+
+/*===============*/
+
+div.wrapper-viz{
+    align-items: flex-start;
+    display: flex;
+    flex-direction: row;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 16px;
+    gap: 30px;
+    justify-content: space-around;
+    margin: 0 auto;
+    width: var(--width-wrapper-viz);
+}
+
+div.group-vizualizations{
+    display: flex;
+    flex-direction: column;
+    width: 80%;
+    gap: 10px;
+}
+
+div.viz-container{
+    border: 1px solid #000;
+    overflow: auto;
+}
+
+div.info-notas-viz{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    margin-top: 5px;
+    gap: 10px;
+    font-size: 0.75em;
+}
+
+div.contenido-nota{
+    padding: 10px;
+    text-align: justify;
+}
+
+div.menu-gris{
+    width: 20%;
+    background-color: #f2f2f2;
+    border: 1px solid #CCC;
+    border-radius: 10px;
+    height: 400px;
+}

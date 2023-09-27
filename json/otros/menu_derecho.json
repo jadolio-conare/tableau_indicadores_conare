@@ -1,0 +1,71 @@
+{
+    "menu_derecho" : {
+        "titulo" : "Consultas y Trámites",
+        "opciones": [
+            {
+                "subitem": "1", 
+                "texto":"Reconocimiento y Equiparación | ORE",
+                "url" : "https://www.conare.ac.cr/consultas-y-tramites/reconocimiento-y-equiparacion-ore/"
+            },
+            {
+                "subitem": "2", 
+                "texto":"Biblioteca",
+                "url" : "https://www.conare.ac.cr/consultas-y-tramites/biblioteca-conare/"
+            },
+            {
+                "subitem": "3", 
+                "texto":"Estadísticas",
+                "url" : "https://www.conare.ac.cr/consultas-y-tramites/estadisticas/indicadores-de-la-educacion-universitaria-estatal/",
+                "opciones" : [
+                    {
+                        "subitem" : "0", 
+                        "texto": "Indicadores de la Educación Universitaria Estatal",
+                        "url" : "https://www.conare.ac.cr/consultas-y-tramites/estadisticas/indicadores-de-la-educacion-universitaria-estatal/",
+                        "opciones": [
+                            {
+                                "subitem": "0",
+                                "url": "https://www.conare.ac.cr/consultas-y-tramites/estadisticas/indicadores-de-la-educacion-universitaria-estatal/01_docencia/",
+                                "texto": "Docencia"
+                            },
+                            {
+                                "subitem": "1",
+                                "url": "https://www.conare.ac.cr/consultas-y-tramites/estadisticas/indicadores-de-la-educacion-universitaria-estatal/02_investigacion/",
+                                "texto": "Investigación"
+                            },
+                            {
+                                "subitem": "2",
+                                "url": "https://www.conare.ac.cr/consultas-y-tramites/estadisticas/indicadores-de-la-educacion-universitaria-estatal/03_ext_accion_social/",
+                                "texto": "Extensión y Acción Social"
+                            },
+                            {
+                                "subitem": "3",
+                                "url": "https://www.conare.ac.cr/consultas-y-tramites/estadisticas/indicadores-de-la-educacion-universitaria-estatal/04_vida_estudianti/",
+                                "texto": "Vida Estudiantil"
+                            }
+                        ]
+                    },
+                    {
+                        "subitem" : "1",
+                        "url": "https://www.conare.ac.cr/consultas-y-tramites/estadisticas/observatorio-laboral-de-profesiones-olap/",
+                        "texto": "Observatorio Laboral de Profesiones | OLaP"
+                    },
+                    {
+                        "subitem" : "2", 
+                        "url": "https://www.conare.ac.cr/consultas-y-tramites/estadisticas/radiografia-laboral/",
+                        "texto": "Radiografía Laboral"
+                    },
+                    {
+                        "subitem" : "3", 
+                        "url": "https://www.conare.ac.cr/consultas-y-tramites/estadisticas/sistema-de-informacion-de-la-educacion-superior-siesue/",
+                        "texto": "Sistema de Información de la Educación Superior | SIESUE"
+                    }
+                ]
+            },
+            {
+                "subitem": "4", 
+                "url": "https://www.conare.ac.cr/consultas-y-tramites/proyectos-de-ley/",
+                "texto": "Proyectos de Ley"
+            }
+        ]
+    }
+}

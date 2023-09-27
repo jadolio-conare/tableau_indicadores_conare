@@ -1,0 +1,13 @@
+{
+    "indicadores":
+    [
+        {
+            "url": "https://public.tableau.com/views/indicadores_investigacion/INV1_1?:language=en-US&publish=yes&:display_count=n&:origin=viz_share_link",
+            "notas": "<strong>Fuente:</strong> Elaboración propia a partir de los datos suministrados por la Subcomisión de Indicadores."
+        },
+        {
+            "url": "https://public.tableau.com/views/indicadores_investigacion/INV2_2?:language=en-US&publish=yes&:display_count=n&:origin=viz_share_link",
+            "notas": "<strong>Fuente:</strong> Elaboración propia a partir de los datos suministrados por la Subcomisión de Indicadores."
+        }
+    ]
+}

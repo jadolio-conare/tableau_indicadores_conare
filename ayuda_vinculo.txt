@@ -1,0 +1,16 @@
+http://public.tableau.com/views/Indicadoressitioweb2023Docencia/Docencia?:
+embed=y
+&:showVizHome=no
+&:host_url=https://public.tableau.com/
+&:embed_code_version=3
+&:tabs=no
+&:toolbar=yes
+&:animate_transition=yes
+&:display_static_image=no
+&:display_spinner=no
+&:display_overlay=yes
+&:display_count=yes
+&:language=en-US
+&:loadOrderID=0
+
+http://public.tableau.com/views/Indicadoressitioweb2023Docencia/Docencia?:embed=y&:showVizHome=no&:host_url=https://public.tableau.com/&:embed_code_version=3&:tabs=no&:toolbar=yes&:animate_transition=yes&:display_static_image=no&:display_spinner=no&:display_overlay=yes&:display_count=yes&:language=en-US&:loadOrderID=0

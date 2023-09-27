@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <script src="js/node_modules/jquery/dist/jquery.min.js"></script>
+    </head>
+    <body>
+    <iframe id="contenido" style="width: 1000px; height: 600px; border: 1px solid #000"></iframe>
+    <script>
+
+        const URL_TABLEAU = "https://public.tableau.com/views/Indicadoressitioweb2023Docencia/Docencia?:embed=y&:showVizHome=no&:host_url=https://public.tableau.com/&:embed_code_version=3&:tabs=no&:toolbar=yes&:animate_transition=yes&:display_static_image=no&:display_spinner=no&:display_overlay=yes&:display_count=yes&:language=en-US&:loadOrderID=0";
+
+        $(document).ready(function(){
+            let iframeGrafico = document.querySelector("#contenido");
+            iframeGrafico.src = URL_TABLEAU;
+
+            iframeGrafico.addEventListener("load", function(){
+                console.log("estoy cargado");
+                let contGrafico = document.getElementById("contenido").contentWindow.document.querySelector("#viz-client-container");
+                console.log(contGrafico);
+            });
+
+        });
+
+    </script>
+
+    </body>
+</html>

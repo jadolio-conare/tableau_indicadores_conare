@@ -1,0 +1,21 @@
+{
+    "indicadores":
+    [
+        {
+            "url": "https://public.tableau.com/views/indicadores_vida_estudiantil/VE1_1?:language=en-US&publish=yes&:display_count=n&:origin=viz_share_link",
+            "notas": "<strong>Fuente:</strong> Elaboración propia a partir de datos suministrados por la Subcomisión de Indicadores."
+        },
+        {
+            "url": "https://public.tableau.com/views/indicadores_vida_estudiantil/VE1_2?:language=en-US&publish=yes&:display_count=n&:origin=viz_share_link",
+            "notas": [
+                {
+                    "item": "<strong>Fuentes:</strong>",
+                    "parrafos": [
+                        {"pr": "<strong>(a)</strong> <span>Para el período 2016-2020 y el año 2022, la información fue brindada por la Subcomisión de Indicadores.</span>"},
+                        {"pr": "<strong>(b)</strong> <span>Para el año 2021, se utilizó la información publicada en el Semanario Universidad, debido a que este indicador no se incluye en la metodología de seguimiento para el PLANES 2021-2025.</span>"}
+                    ]
+                }
+            ]
+        }
+    ]
+}

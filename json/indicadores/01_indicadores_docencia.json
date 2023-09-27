@@ -1,0 +1,57 @@
+{
+    "indicadores":
+    [
+        {
+            "url": "https://public.tableau.com/views/indicadores_docencia/D1_1?:language=en-US&publish=yes&:display_count=n&:origin=viz_share_link",
+            "notas": "<strong>Fuente:</strong> Elaboración propia a partir de los datos suministrados por la Subcomisión de Indicadores."
+        },
+        {
+            "url": "https://public.tableau.com/views/indicadores_docencia/D2_2?:language=en-US&publish=yes&:display_count=n&:origin=viz_share_link",
+            "notas": "<strong>Fuente:</strong> Elaboración propia a partir de los datos suministrados por la Subcomisión de Indicadores."
+        },
+        {
+            "url": "https://public.tableau.com/views/indicadores_docencia/D3_3?:language=en-US&publish=yes&:display_count=n&:origin=viz_share_link",
+            "notas": "<strong>Fuente:</strong> Elaboración propia a partir de los datos suministrados por la Subcomisión de Indicadores."
+        },
+        {
+            "url": "https://public.tableau.com/views/indicadores_docencia/D4_4?:language=en-US&publish=yes&:display_count=n&:origin=viz_share_link",
+            "notas": [
+                {
+                    "item": "<strong>Notas:</strong>",
+                    "parrafos": [
+                        {"pr": "<strong>1/</strong> <span>Los registros no incluyen posgrados.</span>"},
+                        {"pr": "<strong>2/</strong> <span>Los datos no incluyen información de la UNED, dado que por la modalidad a distancia no tiene una cantidad de cupos determinada por año.</span>"},
+                        {"pr": "<strong>3/</strong> <span>Información generada en julio del 2023.</span>"}
+                    ]
+                },
+                {
+                    "item": "<strong>Fuentes:</strong>",
+                    "parrafos": [
+                        {"pr": "<span>División de Planificación Interuniversitaria del Consejo Nacional de Rectores (OPES-Conare).</span>"},
+                        {"pr": "<span>Elaborado a partir de la información suministrada por las Oficinas de Registro y Vicerrectorías de Docencia de las universidades estatales, entre los años 2017 y 2022.</span>"}
+                    ]
+                }
+            ]
+        },
+        {
+            "url": "https://public.tableau.com/views/indicadores_docencia/D5_5?:language=en-US&publish=yes&:display_count=n&:origin=viz_share_link",
+            "notas": [
+                {
+                    "item": "<strong>Notas:</strong>",
+                    "parrafos": [
+                        {"pr": "<strong>1/</strong> <span>Los registros no incluyen posgrados.</span>"},
+                        {"pr": "<strong>2/</strong> <span>Los datos no incluyen información de la UNED, dado que por la modalidad a distancia no tiene una cantidad de cupos determinada por año.</span>"},
+                        {"pr": "<strong>3/</strong> <span>Información generada en julio del 2023.</span>"}
+                    ]
+                },
+                {
+                    "item": "<strong>Fuentes:</strong>",
+                    "parrafos": [
+                        {"pr": "<span>División de Planificación Interuniversitaria del Consejo Nacional de Rectores (OPES-Conare).</span>"},
+                        {"pr": "<span>Elaborado a partir de la información suministrada por las Oficinas de Registro y Vicerrectorías de Docencia de las universidades estatales, entre los años 2017 y 2022.</span>"}
+                    ]
+                }
+            ]
+        }
+    ]
+}

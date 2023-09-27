@@ -1,0 +1,21 @@
+/*Estilos Responsivos*/
+
+@media screen and (min-width: 320px) and (max-width: 1024px) {
+
+    div.wrapper-viz{
+        width: var(--width-wrapper-viz) !important;
+        flex-direction: column !important;
+    }
+
+    div.group-vizualizations{
+        width: inherit !important;
+    }
+
+    div.info-notas-viz{
+        flex-direction: column !important;
+    }
+
+}
+
+/*@media screen and (min-width: 601px) and (max-width: 1300px) {}*/
+/*@media screen and (min-width: 1301px) and (max-width: 1655px) {}*/
