@@ -1,0 +1,9 @@
+{
+    "rutas_info_indicadores" : 
+    [
+        {"id": "viz-docencia", "titulo": "Docencia", "url_json": "json/indicadores/01_indicadores_docencia.json"},
+        {"id": "viz-investigacion", "titulo": "Investigación", "url_json": "json/indicadores/02_indicadores_investigacion.json"},
+        {"id": "viz-extension-accion-social", "titulo": "Extensión y Acción Social", "url_json": "json/indicadores/03_indicadores_ext_accion_social.json"},
+        {"id": "viz-vida-estudiantil", "titulo": "Vida Estudiantil", "url_json": "json/indicadores/04_indicadores_vida_estudiantil.json"}
+    ]
+}
