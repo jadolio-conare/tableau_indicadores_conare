@@ -2,13 +2,19 @@
  * 
  * @param {*} url 
  */
-function inicializarVisualizaciones(container, width_container, url) {
+function inicializarVisualizaciones(container, url) {
+
+    let cuerpoVisualizaciones = document.querySelector("div.body-tabs-groups-vizualizations");
+
+    let anchoCuerpoViz = cuerpoVisualizaciones.clientWidth-45;
 
     let options = {
-        width: width_container,
-        height: HEIGHT_VIZ,
+        width: anchoCuerpoViz,
+        height: ALTURA_VIZ,
         hideTabs: true
     };
+
+    console.log(options);
 
     let vizTableau = new tableau.Viz(container, url, options);
 
@@ -50,17 +56,36 @@ incluyeNotasGrafico = ($divPadre, elemento) => {
 /**
  * 
  */
-cambioTamannoGrafico = () => {
+construirContenidoViz = (id, $div_padre, lista_indicadores) => {
 
+    $div_padre.empty();
+    
+    lista_indicadores.forEach((e, idx) => {
+        let divVisualizacion = document.createElement("div");
+        divVisualizacion.className = `viz-container ${id} graphic-${idx}`;
+        $div_padre.append(divVisualizacion);
+        inicializarVisualizaciones(divVisualizacion, e["url"]);
+    });
+
+}
+
+/**
+ * 
+ */
+cargaDatosIndicadores = () => {
+
+    /*
     let $wrapperPrincipal = $(".group-vizualizations");
 
     $wrapperPrincipal.empty();
 
     URL_INDICADORES.forEach((e, idx) => {
+
         // ------------------------------------
-        let divVisualizacion = document.createElement("div");
-        divVisualizacion.className = `viz-container graphic-${idx}`;
-        $wrapperPrincipal.append(divVisualizacion);
+        //let divVisualizacion = document.createElement("div");
+        //divVisualizacion.className = `viz-container graphic-${idx}`;
+        //$wrapperPrincipal.append(divVisualizacion);
+        
         let divVizAgregado = document.querySelector(`.viz-container.graphic-${idx}`);
         let anchoDivViz = divVizAgregado.clientWidth;
         inicializarVisualizaciones(divVisualizacion, anchoDivViz, e["url"]);
@@ -76,5 +101,5 @@ cambioTamannoGrafico = () => {
     let hijosMenosPrimero = [...document.querySelectorAll(`.viz-container:not(:first-child)`)];
     let hijoViz = hijosMenosPrimero[0].querySelector("iframe");
     document.querySelector(`.viz-container:first-child iframe`).style.width = hijoViz.style.width;
-
+    */
 }

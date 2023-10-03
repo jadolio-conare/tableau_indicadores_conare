@@ -23,23 +23,23 @@
                         "url" : "https://www.conare.ac.cr/consultas-y-tramites/estadisticas/indicadores-de-la-educacion-universitaria-estatal/",
                         "opciones": [
                             {
-                                "subitem": "0",
-                                "url": "https://www.conare.ac.cr/consultas-y-tramites/estadisticas/indicadores-de-la-educacion-universitaria-estatal/01_docencia/",
+                                "subitem": "01-viz-inds-docencia",
+                                "url": "#",
                                 "texto": "Docencia"
                             },
                             {
-                                "subitem": "1",
-                                "url": "https://www.conare.ac.cr/consultas-y-tramites/estadisticas/indicadores-de-la-educacion-universitaria-estatal/02_investigacion/",
+                                "subitem": "02-viz-inds-investigacion",
+                                "url": "#",
                                 "texto": "Investigación"
                             },
                             {
-                                "subitem": "2",
-                                "url": "https://www.conare.ac.cr/consultas-y-tramites/estadisticas/indicadores-de-la-educacion-universitaria-estatal/03_ext_accion_social/",
+                                "subitem": "03-viz-inds-extension-accion-social",
+                                "url": "#",
                                 "texto": "Extensión y Acción Social"
                             },
                             {
-                                "subitem": "3",
-                                "url": "https://www.conare.ac.cr/consultas-y-tramites/estadisticas/indicadores-de-la-educacion-universitaria-estatal/04_vida_estudianti/",
+                                "subitem": "04-viz-inds-vida-estudiantil",
+                                "url": "#",
                                 "texto": "Vida Estudiantil"
                             }
                         ]
