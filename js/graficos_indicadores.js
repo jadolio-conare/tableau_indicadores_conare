@@ -14,8 +14,6 @@ function inicializarVisualizaciones(container, url) {
         hideTabs: true
     };
 
-    console.log(options);
-
     let vizTableau = new tableau.Viz(container, url, options);
 
     if(listaVizTableau.length > 0){
