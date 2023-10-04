@@ -29,7 +29,38 @@ activaNavegacionVinetas = ($vineta_presionada) => {
 /**
  * 
  */
-construirVinetasIndicadores = (informacion_indicadores) => {
+graficosVinetaActiva = (datos_indicadores) => {
+
+    let tabActivo = document.querySelector("a.title-viz-indicators.tab-activo");
+    let clase_css_tab = [...tabActivo.classList][1];
+    let disciplina_activa = datos_indicadores.filter(disciplina => disciplina.id === clase_css_tab);
+    let $grupo_visualizaciones = $(`div.group-vizualizations.${disciplina_activa[0]["id"]}`);
+    construirContenidoViz(disciplina_activa[0]["id"], $grupo_visualizaciones, disciplina_activa[0]["indicadores"]);
+    construirDiapositivasNavegacion($grupo_visualizaciones, disciplina_activa[0]["id"], disciplina_activa[0]["indicadores"]);
+
+}
+
+/**
+ * 
+ */
+defineAnchuraVista = () => {
+
+    let anchoElementosViz = document.querySelector("div.body-tabs-groups-vizualizations").clientWidth;
+
+    let gruposDivsVisualizaciones = document.querySelectorAll("div.group-vizualizations");
+
+    gruposDivsVisualizaciones.forEach(grp => {
+        grp.style.width = `${anchoElementosViz-30}px`;
+    });
+
+    ANCHO_VIZ = 0;
+
+}
+
+/**
+ * 
+ */
+construirVinetasIndicadores = () => {
 
     let $padreViz = $(".wrapper-viz");
     let $divGrupos = $("<div />", {"class": "main-groups-vizualizations"});
@@ -39,7 +70,7 @@ construirVinetasIndicadores = (informacion_indicadores) => {
     $divGrupos.append($divNavTabs, $divCuerpoTabs);
     $padreViz.append($divGrupos);
 
-    informacion_indicadores.forEach(elem => {
+    URL_INDICADORES.forEach(elem => {
         let separa_id = parseInt(elem["id"].split("-"));
         let css_tab = (separa_id === 1) ? `title-viz-indicators ${elem["id"]} tab-activo` : `title-viz-indicators ${elem["id"]} tab-inactivo`;
         let css_seccion = (separa_id === 1) ? `tab-viz-indicators ${elem["id"]} seccion-viz-activo` : `tab-viz-indicators ${elem["id"]} seccion-viz-inactivo`;
@@ -49,22 +80,18 @@ construirVinetasIndicadores = (informacion_indicadores) => {
         $divVineta.append($contenidoVineta);
         $divNavTabs.append($tituloVineta);
         $divCuerpoTabs.append($divVineta);
-        construirContenidoViz(elem["id"], $contenidoVineta, elem["indicadores"]);
     });
 
-    let anchoElementosViz = document.querySelector("div.body-tabs-groups-vizualizations").clientWidth;
-
-    let gruposDivsVisualizaciones = document.querySelectorAll("div.group-vizualizations");
-
-    gruposDivsVisualizaciones.forEach(grp => {
-        grp.style.width = `${anchoElementosViz-30}px`;
-    })
+    defineAnchuraVista();
+   
+    graficosVinetaActiva(URL_INDICADORES);
 
     let $tabsVinetas = $("a.title-viz-indicators");
 
     $tabsVinetas.on("click", function(evt){
         evt.preventDefault();
         activaNavegacionVinetas($(this));
+        graficosVinetaActiva(URL_INDICADORES);
     });
 
 }

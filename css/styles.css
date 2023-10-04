@@ -26,6 +26,7 @@ div.main-groups-vizualizations{
     display: flex;
     flex-direction: column;
     width: 75%;
+    padding-bottom: 20px;
 }
 
 div.nav-tabs-groups-vizualizations{

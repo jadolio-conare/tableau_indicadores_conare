@@ -8,13 +8,15 @@ function inicializarVisualizaciones(container, url) {
 
     let anchoCuerpoViz = cuerpoVisualizaciones.clientWidth-45;
 
-    let options = {
-        width: anchoCuerpoViz,
+    ANCHO_VIZ = (ANCHO_VIZ === 0) ? anchoCuerpoViz : ANCHO_VIZ;
+
+    let opciones_visualizacion = {
+        width: ANCHO_VIZ,
         height: ALTURA_VIZ,
         hideTabs: true
     };
 
-    let vizTableau = new tableau.Viz(container, url, options);
+    let vizTableau = new tableau.Viz(container, url, opciones_visualizacion);
 
     if(listaVizTableau.length > 0){
         listaVizTableau.splice(0, listaVizTableau.length);
@@ -63,7 +65,26 @@ construirContenidoViz = (id, $div_padre, lista_indicadores) => {
         divVisualizacion.className = `viz-container ${id} graphic-${idx}`;
         $div_padre.append(divVisualizacion);
         inicializarVisualizaciones(divVisualizacion, e["url"]);
+
+        let iframeViz = divVisualizacion.querySelector("iframe");
+        iframeViz.className+= `iframe-viz-container-graphic-${idx}`;
+        iframeViz.addEventListener("load", function(evt){
+            incluyeNotasGrafico($(divVisualizacion), e);
+        });
     });
+
+}
+
+/**
+ * 
+ */
+construirDiapositivasNavegacion = ($presentacion_graficos, id, lista_indicadores) => {
+
+    let $padrePresentacion = $presentacion_graficos.parent();
+    let $navegacionDiapositivas = $("<div />", {"class": `navigate-vizualizations ${id}`});
+    $padrePresentacion.append($navegacionDiapositivas);
+
+    //console.log($padrePresentacion);
 
 }
 
