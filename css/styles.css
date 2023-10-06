@@ -44,8 +44,10 @@ div.body-tabs-groups-vizualizations{
 }
 
 div.tab-viz-indicators{
-    width: auto;
+    display: flex;
+    flex-direction: column;
     height: inherit;
+    width: auto;
 }
 
 div.group-vizualizations{
@@ -99,6 +101,30 @@ div.seccion-viz-activo{
 }
 
 div.seccion-viz-inactivo{
+    display: none;
+}
+
+div.navigate-vizualizations{
+    display: flex;
+    flex-direction: row;
+    gap: 10px;
+    justify-content: center;
+    margin: 10px auto;
+}
+
+a.button-nav-slide{
+    background-color: #003366;
+    border-radius: 50%;
+    display: block;
+    height: 30px;
+    width: 30px;
+}
+
+div.slide-activo{
+    display: block;
+}
+
+div.slide-inactivo{
     display: none;
 }
 

@@ -62,7 +62,8 @@ construirContenidoViz = (id, $div_padre, lista_indicadores) => {
     
     lista_indicadores.forEach((e, idx) => {
         let divVisualizacion = document.createElement("div");
-        divVisualizacion.className = `viz-container ${id} graphic-${idx}`;
+        let css_slide_grafico = (idx === 0) ? `viz-container ${id} graphic-${idx} slide-activo` : `viz-container ${id} graphic-${idx} slide-inactivo`;
+        divVisualizacion.className = css_slide_grafico;
         $div_padre.append(divVisualizacion);
         inicializarVisualizaciones(divVisualizacion, e["url"]);
 
@@ -81,10 +82,25 @@ construirContenidoViz = (id, $div_padre, lista_indicadores) => {
 construirDiapositivasNavegacion = ($presentacion_graficos, id, lista_indicadores) => {
 
     let $padrePresentacion = $presentacion_graficos.parent();
+    let textoSelectorNav = `div[class*='navigate-vizualizations ${id}']`;
+
+    if(document.querySelector(textoSelectorNav) !== undefined){
+        $(textoSelectorNav).remove();
+    }
+
     let $navegacionDiapositivas = $("<div />", {"class": `navigate-vizualizations ${id}`});
+
     $padrePresentacion.append($navegacionDiapositivas);
 
-    //console.log($padrePresentacion);
+    lista_indicadores.forEach((el, idx) => {
+
+        let $botonNavDiapositiva = $("<a />", {
+            "href": "#",
+            "class": `button-nav-slide ${id} graphic-${idx}`
+        });
+
+        $navegacionDiapositivas.append($botonNavDiapositiva);
+    });
 
 }
 
